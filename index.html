@@ -62,7 +62,7 @@
       <!-- Navbar start -->
       <header>
         <nav
-          class="relative py-5 xl:mx-auto xl:max-w-[1260px] flex justify-between items-center z-10"
+          class="py-5 xl:mx-auto xl:max-w-[1260px] flex justify-between items-center z-10"
         >
           <!-- Logo start -->
           <svg
@@ -126,7 +126,13 @@
           </button>
 
           <!-- Menu button start -->
-          <svg class="lg:hidden" width="40" height="40" viewBox="0 0 40 40">
+          <svg
+            class="lg:hidden"
+            id="menu-btn"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+          >
             <path
               fill="currentColor"
               fill-rule="evenodd"
@@ -137,10 +143,12 @@
           <!-- Menu button end -->
 
           <!-- Mobile nav items start -->
-          <div class="hidden">
-            <div>
+          <div
+            class="hidden fixed py-6 pl-4 pr-6 overflow-hidden top-0 right-0 bottom-0 left-0 w-full flex-col justify-between items-center text-[#23272a] bg-white z-20"
+          >
+            <div class="w-full">
               <!-- Top site start -->
-              <div>
+              <div class="flex justify-between">
                 <!-- Logo start -->
                 <svg
                   width="124"
@@ -181,9 +189,10 @@
                 <!-- Logo end -->
 
                 <!-- Close button start -->
-                <div>
+
+                <button class="py-1 px-2" id="close-btn">
                   <svg
-                    class="closeIcon-3Cx1EL"
+                    class="closeIcon-3Cx1EL w-6 h-6"
                     width="12"
                     height="12"
                     viewBox="0 0 12 12"
@@ -196,24 +205,43 @@
                       ></path>
                     </g>
                   </svg>
-                </div>
+                </button>
                 <!-- Close button end -->
               </div>
               <!-- Top site end -->
 
-              <hr />
+              <hr class="mr-6 mt-6 mb-4" />
 
               <!-- Nav items start -->
-              <ul>
-                <a href="#"><span>Home</span></a>
-                <a href="#"><span>Download</span></a>
-                <a href="#"><span>Nitro</span></a>
-                <a href="#"><span>Discover</span></a>
-                <a href="#">
-                  <span>Safety</span>
+              <ul class="pr-6 w-full flex flex-col justify-between">
+                <a
+                  class="py-2 px-4 text-base font-light text-[#00b0f4] bg-[#f6f6f6] rounded-lg hover:underline"
+                  href="#"
+                  >Home</a
+                >
+                <a
+                  class="py-2 px-4 text-base font-light rounded-lg hover:underline"
+                  href="#"
+                  >Download</a
+                >
+                <a
+                  class="py-2 px-4 text-base font-light rounded-lg hover:underline"
+                  href="#"
+                  >Nitro</a
+                >
+                <a
+                  class="py-2 px-4 text-base font-light rounded-lg hover:underline"
+                  href="#"
+                  >Discover</a
+                >
+                <a
+                  class="py-2 px-4 text-base font-light rounded-lg flex hover:underline"
+                  href="#"
+                >
+                  Safety
                   <!-- Right arrow icon start -->
                   <svg
-                    class="caret-gcFw9A"
+                    class="caret-gcFw9A -rotate-90"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
@@ -227,11 +255,14 @@
                   </svg>
                   <!-- Right arrow icon end -->
                 </a>
-                <a href="#">
-                  <span>Mod Academy</span>
+                <a
+                  class="py-2 px-4 text-base font-light rounded-lg flex hover:underline"
+                  href="#"
+                >
+                  Mod Academy
                   <!-- Right arrow icon start -->
                   <svg
-                    class="caret-gcFw9A"
+                    class="caret-gcFw9A -rotate-90"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
@@ -245,16 +276,31 @@
                   </svg>
                   <!-- Right arrow icon end -->
                 </a>
-                <a href="#"><span>Support</span></a>
-                <a href="#"><span>Blog</span></a>
-                <a href="#"><span>Careers</span></a>
+                <a
+                  class="py-2 px-4 text-base font-light rounded-lg hover:underline"
+                  href="#"
+                  >Support</a
+                >
+                <a
+                  class="py-2 px-4 text-base font-light rounded-lg hover:underline"
+                  href="#"
+                  >Blog</a
+                >
+                <a
+                  class="py-2 px-4 text-base font-light rounded-lg hover:underline"
+                  href="#"
+                  >Careers</a
+                >
               </ul>
               <!-- Nav items end -->
             </div>
 
-            <div>
+            <button
+              class="px-4 py-2 w-full text-sm leading-6 text-left bg-[#5865f2] text-white rounded-[28px] sm:rounded-full flex justify-center hover:bg-[#5865f2] hover:drop-shadow-xl duration-200 ease-in-out"
+            >
               <!-- Download icon start -->
               <svg
+                class="mr-2"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -270,9 +316,8 @@
                 </g>
               </svg>
               <!-- Download icon end -->
-
-              <button>Download from Google Play</button>
-            </div>
+              Download from Google Play
+            </button>
           </div>
           <!-- Mobile nav items end -->
         </nav>
