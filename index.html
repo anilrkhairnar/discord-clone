@@ -120,7 +120,7 @@
           <!-- Nav items end -->
 
           <button
-            class="px-4 py-[7px] text-sm rounded-3xl font-normal leading-6 bg-white text-black hidden lg:block hover:text-[#5865f2] hover:drop-shadow-xl duration-200 ease-in-out"
+            class="px-4 py-[7px] text-sm rounded-3xl font-normal leading-6 bg-white text-[#23272a] hidden lg:block hover:text-[#5865f2] hover:drop-shadow-xl duration-200 ease-in-out"
           >
             Login
           </button>
@@ -304,7 +304,7 @@
         <!-- Mobile button start -->
         <div class="lg:hidden">
           <button
-            class="px-8 py-4 mt-6 text-xl leading-6 text-left bg-white text-black rounded-[28px] sm:rounded-full flex justify-center items-center hover:text-[#5865f2] hover:drop-shadow-xl duration-200 ease-in-out"
+            class="px-8 py-4 mt-6 text-xl leading-6 text-left bg-white text-[#23272a] rounded-[28px] sm:rounded-full flex justify-center items-center hover:text-[#5865f2] hover:drop-shadow-xl duration-200 ease-in-out"
           >
             <!-- Download icon start -->
             <svg
@@ -334,7 +334,7 @@
           <!-- Download button start -->
 
           <button
-            class="px-8 py-4 mt-6 text-xl leading-6 text-left bg-white text-black rounded-[28px] sm:rounded-full flex justify-center items-center hover:text-[#5865f2] hover:drop-shadow-xl duration-200 ease-in-out"
+            class="px-8 py-4 mt-6 text-xl leading-6 text-left bg-white text-[#23272a] rounded-[28px] sm:rounded-full flex justify-center items-center hover:text-[#5865f2] hover:drop-shadow-xl duration-200 ease-in-out"
           >
             <!-- Download icon start -->
             <svg
@@ -390,98 +390,205 @@
     <!-- Main section end -->
 
     <!-- Info section start -->
-    <section>
+    <section class="xl:flex flex-col items-center">
       <!-- Study Group start -->
-      <div class="px-6 py-14 md:px-10 xl:px-32 w-full">
-        <div>
-          <img
-            class="mt-6"
-            src="./images/study-group.svg"
-            alt="study-group-image"
-          />
-        </div>
-        <div>
-          <h2>Create an invite-only place where you belong</h2>
-          <p>
-            Discord servers are organized into topic-based channels where you
-            can collaborate, share, and just talk about your day without
-            clogging up a group chat.
-          </p>
+      <div>
+        <div
+          class="px-6 py-14 md:px-10 md:py-20 lg:py-[120px] xl:px-32 w-full max-w-[1260px] md:flex justify-between items-center gap-5"
+        >
+          <div class="md:w-3/6 lg:w-4/6 xl:6/12">
+            <img
+              class="mt-6 w-full"
+              src="./images/study-group.svg"
+              alt="study-group-image"
+            />
+          </div>
+          <div
+            class="mt-5 md:w-3/6 xl:5/12 flex flex-col items-end text-[#23272a]"
+          >
+            <h2
+              class="md:w-full lg:w-5/6 xl:full text-xl sm:text-[4vw] md:text-5xl font-bold md:leading-[120%]"
+            >
+              Create an invite-only place where you belong
+            </h2>
+            <p
+              class="mt-6 lg:w-5/6 text-sm md:text-base lg:text-xl tracking-wide leading-6"
+            >
+              Discord servers are organized into topic-based channels where you
+              can collaborate, share, and just talk about your day without
+              clogging up a group chat.
+            </p>
+          </div>
         </div>
       </div>
       <!-- Study Group end -->
+
+      <!-- Voice Channel start -->
+      <div class="w-full bg-[#f6f6f6]">
+        <div
+          class="px-6 py-14 md:px-10 md:py-20 lg:py-[120px] lg:mx-auto xl:px-32 w-full max-w-[1260px] flex flex-col-reverse md:flex-row justify-between items-center gap-5"
+        >
+          <div class="mt-5 md:w-3/6 lg:5/12 text-[#23272a]">
+            <h2
+              class="md:w-full lg:w-5/6 xl:full text-xl sm:text-[4vw] md:text-5xl font-bold md:leading-[120%]"
+            >
+              Where hanging out is easy
+            </h2>
+            <p
+              class="mt-6 lg:w-5/6 text-sm md:text-base lg:text-xl font-light tracking-wide leading-6"
+            >
+              Grab a seat in a voice channel when you’re free. Friends in your
+              server can see you’re around and instantly pop in to talk without
+              having to call.
+            </p>
+          </div>
+          <div class="md:w-3/6 lg:w-5/6 xl:6/12">
+            <img
+              class="mt-6 md:m-0 w-full"
+              src="./images/voice-channel.svg"
+              alt="voice-channel-image"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Voice Channel end -->
+
+      <!-- Coach start -->
+      <div>
+        <div
+          class="px-6 py-14 md:px-10 md:py-20 lg:py-[120px] xl:px-32 w-full max-w-[1260px] md:flex justify-between items-center gap-5"
+        >
+          <div class="md:w-3/6 lg:w-4/6 xl:6/12">
+            <img
+              class="mt-6 lg:m-0 w-full"
+              src="./images/coach.svg"
+              alt="coach-image"
+            />
+          </div>
+          <div
+            class="mt-5 md:w-3/6 xl:5/12 xl:flex flex-col items-end text-[#23272a]"
+          >
+            <h2
+              class="md:w-full lg:w-5/6 xl:full text-xl sm:text-[4vw] md:text-5xl font-bold md:leading-[120%]"
+            >
+              From few to a fandom
+            </h2>
+            <p
+              class="mt-6 lg:w-5/6 text-sm md:text-base lg:text-xl font-light tracking-wide leading-6"
+            >
+              Get any community running with moderation tools and custom member
+              access. Give members special powers, set up private channels, and
+              more.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Coach end -->
     </section>
     <!-- Info section end -->
 
     <!-- Video call section start -->
-    <section>
-      <!-- Text start -->
-      <div>
-        <h2>Reliable tech for staying close</h2>
-        <p>
-          Low-latency voice and video feels like you’re in the same room. Wave
-          hello over video, watch friends stream their games, or gather up and
-          have a drawing session with screen share.
-        </p>
-      </div>
-      <!-- Text end -->
-
-      <!-- Image start -->
-      <div>
-        <img src="./images/video-call.svg" alt="video-call-image" />
-      </div>
-      <!-- Image end -->
-
-      <!-- Download area start -->
-      <div>
-        <div>
-          <div>
-            <img src="./images/stars.svg" alt="stars-image" />
-          </div>
-          <h3>Ready to start your journey?</h3>
+    <section class="w-full bg-[#f6f6f6]">
+      <div
+        class="px-6 py-14 md:px-10 md:py-20 lg:py-[120px] lg:mx-auto xl:px-32 w-full max-w-[1260px] md:text-center"
+      >
+        <!-- Text start -->
+        <div class="lg:flex flex-col items-center">
+          <h2
+            class="lg:w-10/12 text-2xl md:text-[45px] lg:text-[50px] font-heading uppercase tracking-wide leading-6 md:leading-10"
+          >
+            Reliable tech for staying close
+          </h2>
+          <p
+            class="mt-6 lg:w-11/12 text-sm lg:text-xl font-light tracking-wide leading-6 lg:leading-7"
+          >
+            Low-latency voice and video feels like you’re in the same room. Wave
+            hello over video, watch friends stream their games, or gather up and
+            have a drawing session with screen share.
+          </p>
         </div>
+        <!-- Text end -->
 
-        <div>
-          <!-- Mobile button start -->
-          <div>
-            <!-- Download icon start -->
-            <svg width="24" height="24" viewBox="0 0 24 24" class="icon-2tQ9Jt">
-              <g fill="currentColor">
-                <path
-                  d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"
-                ></path>
-                <path
-                  d="M18 18.001V20.001H6V18.001H4V20.001C4 21.103 4.897 22.001 6 22.001H18C19.104 22.001 20 21.103 20 20.001V18.001H18Z"
-                ></path>
-              </g>
-            </svg>
-            <!-- Download icon end -->
-
-            <button>Download from Google Play</button>
-          </div>
-          <!-- Mobile button end -->
-
-          <!-- Desktop button start -->
-          <div>
-            <!-- Download icon start -->
-            <svg width="24" height="24" viewBox="0 0 24 24" class="icon-2tQ9Jt">
-              <g fill="currentColor">
-                <path
-                  d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"
-                ></path>
-                <path
-                  d="M18 18.001V20.001H6V18.001H4V20.001C4 21.103 4.897 22.001 6 22.001H18C19.104 22.001 20 21.103 20 20.001V18.001H18Z"
-                ></path>
-              </g>
-            </svg>
-            <!-- Download icon end -->
-
-            <button>Download from Mac</button>
-          </div>
-          <!-- Desktop button end -->
+        <!-- Image start -->
+        <div class="my-6 w-full">
+          <img
+            class="w-full"
+            src="./images/video-call.svg"
+            alt="video-call-image"
+          />
         </div>
+        <!-- Image end -->
+
+        <!-- Download area start -->
+        <div class="relative mt-14">
+          <div class="relative flex flex-col justify-center items-center">
+            <div class="absolute top-0 w-fit overflow-hidden">
+              <img
+                class="select-none"
+                src="./images/stars.svg"
+                alt="stars-image"
+              />
+            </div>
+            <h3 class="mt-6 text-3xl font-bold z-10">
+              Ready to start your journey?
+            </h3>
+          </div>
+          <div class="mt-8 md:flex flex-col items-center">
+            <!-- Mobile button start -->
+            <button
+              class="lg:hidden px-8 py-4 mt-6 text-xl leading-6 text-left bg-[#5865f2] text-white rounded-[28px] sm:rounded-full flex justify-center items-center hover:text-[#5865f2] hover:drop-shadow-xl duration-200 ease-in-out"
+            >
+              <!-- Download icon start -->
+              <svg
+                class="mr-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="icon-2tQ9Jt"
+              >
+                <g fill="currentColor">
+                  <path
+                    d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"
+                  ></path>
+                  <path
+                    d="M18 18.001V20.001H6V18.001H4V20.001C4 21.103 4.897 22.001 6 22.001H18C19.104 22.001 20 21.103 20 20.001V18.001H18Z"
+                  ></path>
+                </g>
+              </svg>
+              <!-- Download icon end -->
+              Download from Google Play
+            </button>
+            <!-- Mobile button end -->
+
+            <!-- Desktop button start -->
+            <button
+              class="hidden px-8 py-4 mt-6 text-xl leading-6 text-left bg-[#5865f2] text-white rounded-[28px] sm:rounded-full lg:flex justify-center items-center hover:text-[#5865f2] hover:drop-shadow-xl duration-200 ease-in-out"
+            >
+              <!-- Download icon start -->
+              <svg
+                class="mr-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="icon-2tQ9Jt"
+              >
+                <g fill="currentColor">
+                  <path
+                    d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"
+                  ></path>
+                  <path
+                    d="M18 18.001V20.001H6V18.001H4V20.001C4 21.103 4.897 22.001 6 22.001H18C19.104 22.001 20 21.103 20 20.001V18.001H18Z"
+                  ></path>
+                </g>
+              </svg>
+              <!-- Download icon end -->
+              Download for Mac
+            </button>
+            <!-- Desktop button end -->
+          </div>
+        </div>
+        <!-- Download area end -->
       </div>
-      <!-- Download area end -->
     </section>
     <!-- Video call section end -->
 
